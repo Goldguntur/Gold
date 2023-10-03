@@ -1,0 +1,77 @@
+/* Sesuaikan CSS sesuai kebutuhan Anda */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Railways";
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    transform: translateY(-100%);
+    animation: fadeInUp 2s ease forwards;
+    opacity: 0;
+}
+
+.welcome-text {
+    color: #fff;
+    color: rgba(100, 100, 100, 0.9);
+    margin-top: 0;
+}
+
+.progressbar {
+    width: 0;
+    height: 7px;
+    background: linear-gradient(to right, rgb(217, 76, 76), rgb(219, 23, 23), rgb(226, 26, 26), rgb(255, 0, 0), rgb(255, 0, 0), rgb(225, 45, 83));
+    margin-top: 20px;
+    background-size: 350px 3px;
+    border-radius: 20px;
+    animation: loading 5s ease-in-out forwards;
+}
+
+.loading-content {
+    margin-top: 20px; /* Tambahkan margin ke atas */
+}
+
+.click-button {
+    display: none;
+    background-color: #0b0b0b;
+    color: #ff0d0d;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Tambahkan margin ke atas */
+}
+
+.sub-text {
+    color: #fff;
+    color: rgba(100, 100, 100, 0.9);
+    margin-bottom: 0;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes loading {
+    to {
+        width: 100%;
+    }
+}

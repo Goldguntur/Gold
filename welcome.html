@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>welcome</title>
+    <link rel="stylesheet" href="loading.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <img src="images/red.png" alt="mrPrice_logo" class="logo">
+        <h3 class="welcome-text">Welcome..</h3>
+        <div class="progressbar"></div>
+        <div class="loading-content">
+            <h3 class="sub-text" id="loadingText">please wait..</h3>
+            <button class="click-button" id="clickButton" onclick="redirectToTarget()">Click Here!</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToTarget() {
+            window.location.href = "index.html";
+        }
+
+        setTimeout(function () {
+            document.getElementById('loadingText').style.display = 'none';
+            document.getElementById('clickButton').style.display = 'block'; 
+        }, 5000);
+    </script>
+</body
+</html>
